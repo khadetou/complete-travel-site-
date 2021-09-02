@@ -1,0 +1,23 @@
+.generique-text {
+  line-height: 1.5rem;
+  margin-top: 0.9375rem;
+  max-width: 483px;
+
+  @mixin atLarge {
+    max-width: 662px;
+  }
+  @mixin atMedium {
+    margin-left: 3.75rem;
+    margin-top: 0;
+  }
+  P {
+    opacity: 0.8;
+    margin-bottom: 1.875rem;
+  }
+
+  &__orange {
+    font-weight: 500;
+    color: $secondColor;
+    text-decoration: underline;
+  }
+}

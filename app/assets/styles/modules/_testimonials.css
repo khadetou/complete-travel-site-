@@ -1,0 +1,126 @@
+.testimonials {
+  background-color: rgb(229, 236, 242, 0.75);
+  @mixin atMedium {
+    background: url('assets/images/testimonials-bg.jpg') top center no-repeat;
+  }
+
+  &__container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 1rem 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @mixin atMedium {
+      padding: 5rem 0;
+    }
+  }
+
+  &__titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.1875rem;
+
+    @mixin atMedium {
+      margin-bottom: 2.1875rem;
+    }
+  }
+
+  &__title {
+    margin: 0 0.9375rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $globalColor;
+
+    @mixin atMedium {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__light {
+    font-weight: 300;
+  }
+
+  &__logo {
+    width: 40px;
+
+    @mixin atMedium {
+      width: 50px;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    @mixin atMedium {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    @mixin atMedium {
+      width: 312px;
+    }
+  }
+  &__circle-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -83px;
+    z-index: 100;
+  }
+
+  &__circle {
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.7);
+    max-width: 150px;
+    @mixin atMedium {
+      max-width: 200px;
+    }
+  }
+
+  &__body {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-bottom: 20px;
+
+    @mixin atMedium {
+      height: 100%;
+    }
+  }
+
+  &__body-title {
+    text-align: center;
+    color: $globalColor;
+    font-size: 1.5rem;
+    margin-top: 70px;
+    margin-bottom: 0;
+
+    @mixin atMedium {
+      margin-top: 70px;
+    }
+  }
+
+  &__body-subtitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.75rem;
+    margin: 0;
+    color: #d4943f;
+    margin-bottom: 30px;
+  }
+
+  &__body-text {
+    line-height: 1.5;
+    margin: 0;
+  }
+}

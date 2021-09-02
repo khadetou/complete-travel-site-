@@ -1,0 +1,18 @@
+.btn {
+  font-weight: 400;
+  background-color: $globalColor;
+  padding: 0.625rem 1.1875rem;
+  display: inline-block;
+  color: #fff;
+
+  &--orange {
+    background-color: $secondColor;
+  }
+  &--large {
+    padding: 0.9375rem 1.5rem;
+  }
+
+  @mixin atSmall {
+    font-size: 1.25rem;
+  }
+}

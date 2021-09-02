@@ -1,0 +1,59 @@
+.large-hero {
+  position: relative;
+  border-bottom: solid 9px $globalColor;
+
+  &__marge {
+    margin-top: 25px;
+
+    @mixin atMedium {
+      margin-top: 0;
+    }
+  }
+  &__image {
+    display: block;
+  }
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__title {
+    color: $globalColor;
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 4.8rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    color: $globalColor;
+    font-size: 1.5rem;
+    margin: 2px;
+
+    @mixin atSmall {
+      font-size: 2.9rem;
+    }
+  }
+
+  &__text {
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #fff;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.1);
+    max-width: 30rem;
+    margin: 0.875rem auto;
+
+    @mixin atSmall {
+      font-size: 1.875rem;
+      margin: 2.125rem auto;
+    }
+  }
+}
